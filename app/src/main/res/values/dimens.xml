@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="character_item_margin">8dp</dimen>
+    <dimen name="character_item_radius">8dp</dimen>
+</resources>

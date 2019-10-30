@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">StarWars</string>
+
+    <string name="no_results">No Result Found</string>
+    <string name="no_connection">Internet not available.</string>
+    <string name="data_issue">Issue with Data.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+
+    <string name="enter_query">Character Name</string>
+    <string name="show_all">Show All Data</string>
+
+    <string name="name">Name</string>
+    <string name="year_of_birth">YoB </string>
+
+    <string name="height">Height</string>
+    <string name="species">Species</string>
+
+    <string name="homeworld">Homeworld</string>
+    <string name="films">Films</string>
+
+    <string name="speak">Speaks %s</string>
+    <string name="live_in">Live in %s</string>
+
+    <string name="population">With Population %s</string>
+    <string name="released_on">Released on %s</string>
+
+    <string name="centimeters">%s Centimeters</string>
+    <string name="feet_inches">%s Ft  or %s Inches</string>
+</resources>

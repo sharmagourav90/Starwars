@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="character"
+            type="com.coder.starwars.data.network.model.CharacterItemModel" />
+
+        <variable
+            name="interaction"
+            type="com.coder.starwars.ui.list.CharacterListAdapter.Interaction" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/character_item_margin"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/character_item_radius"
+        app:contentPadding="@dimen/character_item_radius"
+        android:onClick="@{() -> interaction.characterClicked(character)}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="@{character.name}"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                tools:text="@{character.birthYear}"
+                android:textColor="@color/text_color"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
